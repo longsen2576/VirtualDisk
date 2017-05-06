@@ -8,7 +8,7 @@
 
 #include <ntddk.h>
 
-VOID DriverUnload(PDRIVER_OBJECT driver_obj);
-
 NTSTATUS DriverEntry(PDRIVER_OBJECT driver_obj, PUNICODE_STRING reg_path);
+
+VOID DriverUnload(PDRIVER_OBJECT driver_obj);
 

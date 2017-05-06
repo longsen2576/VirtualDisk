@@ -7,6 +7,7 @@
 #include <ntddk.h>
 
 #include "VitualDisk.h"
+#include "CommonDef.h"
 
 NTSTATUS DriverEntry(PDRIVER_OBJECT driver_obj, PUNICODE_STRING reg_path)
 {
@@ -28,3 +29,4 @@ VOID DriverUnload(PDRIVER_OBJECT driver_obj)
 	UNREFERENCED_PARAMETER(driver_obj);
 	DbgPrint("Driver unload");
 }
+
