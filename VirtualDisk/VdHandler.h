@@ -8,6 +8,8 @@
 
 #include <ntddk.h>
 
+#include "CommonDef.h"
+
 NTSTATUS VdAddDevice(PDRIVER_OBJECT DriverObject, PDEVICE_OBJECT PhysicalDeviceObject);
 NTSTATUS VdRemoveDevice(PDEVICE_EXTENSION pdx, PIRP Irp);
 
