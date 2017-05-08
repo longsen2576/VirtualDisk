@@ -10,8 +10,7 @@
 
 #include "CommonDef.h"
 
-NTSTATUS VdAddDevice(PDRIVER_OBJECT DriverObject, PDEVICE_OBJECT PhysicalDeviceObject);
-NTSTATUS VdRemoveDevice(PDEVICE_EXTENSION pdx, PIRP Irp);
+NTSTATUS VdAddDevice(PDRIVER_OBJECT driver_obj, PDEVICE_OBJECT phy_dev_obj);
+NTSTATUS VdRemoveDevice(PDEVICE_EXTENSION pdx, PIRP irp);
 
-NTSTATUS VdDefualtDispatchRoutine(PDEVICE_OBJECT fdo, PIRP Irp);
-NTSTATUS VdDefaultPnpHandler(PDEVICE_EXTENSION pdx, PIRP Irp);
+NTSTATUS VdDefaultDispatchRoutine(PDEVICE_OBJECT fdo, PIRP irp);
